@@ -1,0 +1,205 @@
+body{
+    
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td{
+    font-family: "Hiragino Sans","Microsoft YaHei" ! important;
+}
+
+a:hover,a:focus{
+    color: #f23f40;
+}
+
+.sui-pagination ul>.active>a:hover, .sui-pagination ul>.active>span:hover, .sui-pagination ul>.active>a:focus, .sui-pagination ul>.active>span:focus{
+    background-color: #f23f40;
+    border-color: #f23f40;
+}
+
+.sui-pagination ul>.active>a, .sui-pagination ul>.active>span{
+    background-color: #f23f40;
+    border-color: #f23f40;
+}
+
+.sui-pagination ul>li>a:hover, .sui-pagination ul>li>a:focus{
+    color: #fff;
+    background-color: #ff0000;
+    border-color: #ff0000;
+}
+
+.pagination-large div .page-num+.page-confirm:hover, .pagination-large div .page-num+.page-confirm:focus{
+    background-color: #ff0000;
+    border-color: #ff0000;
+}
+
+.sui-pagination ul>li>a, .sui-pagination ul>li>span{
+    color: #666;
+    border: 1px solid #ccc;
+}
+
+.pagination-large div .page-num+.page-confirm{
+    background-color: #f23f40;
+    border-color: #f23f40;
+}
+
+.sui-pagination ul>.prev>span, .sui-pagination ul>.next>span, .sui-pagination ul>.prev>a, .sui-pagination ul>.next>a{
+    background-color: #fff;
+}
+
+.option{
+    background-color: #f0f0f0;
+}
+.use{
+    color: #f23f40;
+}
+
+.color-able{
+    color: #f23f40;
+}
+
+#wrap{
+    margin: 0 auto;
+    width:990px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+header{
+    width: 936px;
+    height: 53px;
+    margin: 21px 24.5px 20px;
+    padding-top: 5px;
+    border-bottom: 1px solid #e5e5e5;
+    padding-left: 5px;
+}
+
+header>h3{
+    font-size: 20px;
+    font-family: "Hiragino Sans","Hiragino Sans","Microsoft YaHei" ! important;
+    display: inline-block;
+    color: #666;
+}
+
+div.headerLinks{
+    float: right;
+    line-height: 30px;
+}
+
+span.headerLink,span.headerLink:hover{
+    display: inline-block;
+    font-family: "Hiragino Sans","Microsoft YaHei" ! important;
+    font-size: 13px;
+    color: #f23f40;
+}
+
+div.banner{
+    height: 86px;
+    margin: 20px 24.5px;
+}
+
+nav{
+    display: block;
+    width: 931px;
+    margin: 10px 24.5px;
+    background-color: #f0f0f0;
+    padding:5px;
+    font-family: "Hiragino Sans","Microsoft YaHei" ! important;
+}
+
+div.nav{
+    display: block;
+    clear: both;
+    font-size: 13px;
+    padding: 5px;
+    margin: 5px 10px;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 38px;
+    transition: height 1s;
+}
+
+nav ul{
+    max-width: 800px;
+    float: left;
+}
+
+nav ul li.selected a{
+    border: 2px solid #f23f40;
+    border-radius: 3px;
+    background-image: url(//gtms04.alicdn.com/tps/i4/TB1BA5PHXXXXXaMapXX9vPJJFXX-9-9.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+
+nav ul>li>a{
+    padding: 5px 5px;
+}
+
+
+nav ul li{
+    padding:5px;
+    float: left;
+    margin:0 0 10px 0;
+
+    font-family: "Hiragino Sans","Microsoft YaHei" ! important;
+}
+
+nav span{
+    float: left;
+    font-family: "Hiragino Sans","Microsoft YaHei" ! important;
+}
+
+nav li a{
+    color: #333;
+}
+
+span.catagory{
+    padding: 5px 0;
+}
+
+span.navmore{
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background: url(//gtms03.alicdn.com/tps/i3/TB1._W_HXXXXXXrXXXXXG0.HXXX-50-20.jpg) no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    right: 20px;
+    display: none;
+    margin: 5px 0;
+}
+
+.navmore_show{
+    background: url(//gtms04.alicdn.com/tps/i4/TB1XcSIHXXXXXbMXpXXXG0.HXXX-50-20.jpg) no-repeat;
+}
+
+li.navmore:hover{
+    color: #f40;
+}
+
+.box{
+    margin: 10px 10px 20px;
+    font-family: "Hiragino Sans","Hiragino Sans","Microsoft YaHei" ! important;
+}
+
+.baobei-list li{
+    width: 240px;
+}
+
+.baobei-list{
+    padding: 10px 0 20px 25px;
+}
+
+.carousel2-wrap .item{
+    width: 806px;
+    height: 532px;
+}
+
+.carousel2-wrap{
+    width: 806px;
+    height: 542px;
+}
+
+.carousel2-wrap .sui-btn{
+    left: 324px;
+    bottom: 38px;
+}

@@ -1,0 +1,222 @@
+/* Less / SCSS Syntax Example*/
+/**
+ * Variables
+ * @author coderlambda<coderlambda@gmail.com>
+ */
+/* Your Css Code here*/
+/***content***/
+.form-sub {
+  width: 160px;
+  height: 28px;
+  margin: 0 0 10px 15px;
+  background: url(//gtms02.alicdn.com/tps/i2/TB1PENNFVXXXXX6XVXXDfnBGpXX-160-28.png);
+}
+.form-sub button {
+  border: none;
+  background: none;
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+}
+.sidenav {
+  padding-top: 20px;
+}
+.sidenav .form-sub input {
+  border: none!important;
+  width: 110px!important;
+  box-shadow: none;
+}
+.subnav {
+  margin: 0 15px 10px;
+  box-shadow: 0px 2px 2px #ddd;
+}
+.subnav h4.subnav-hd {
+  display: block;
+  border-bottom: 1px solid #e6e6e6;
+  background-color: #fff;
+  padding: 4px 0 3px 11px;
+  font-weight: 900;
+}
+.subnav ul {
+  padding: 15px 10px 5px;
+  background-color: #fff;
+}
+.subnav ul li {
+  height: 20px;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+.subnav ul li a {
+  height: 20px;
+  line-height: 20px;
+  padding: 4px 10px;
+  color: #333;
+}
+.subnav ul li.selected a {
+  border: 2px solid #30b5ee;
+  border-radius: 3px;
+  background-image: url(//gtms04.alicdn.com/tps/i4/TB1daxRFVXXXXbFXXXX9vPJJFXX-9-9.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+.left-gray-bg {
+  background: url(//gtms02.alicdn.com/tps/i2/TB169TVGFXXXXXHXpXXcR.tFpXX-190-1.png) repeat-y transparent;
+}
+body {
+  background: none;
+}
+/*主要内容*/
+.content-right,
+.self-adaption {
+  zoom: 1;
+}
+.content-right:after,
+.self-adaption:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.baobei-list {
+  padding: 10px;
+}
+.baobei-list li {
+  float: left;
+  display: inline;
+  width: 16.6%;
+  width: auto\9;
+  margin-right: 20px\9;
+}
+@media screen and (max-width: 1390px) {
+  .baobei-list li {
+    width: 19.9%;
+  }
+}
+@media screen and (max-width: 1190px) {
+  .baobei-list li {
+    width: 24.9%;
+  }
+}
+.box {
+  width: 190px;
+  height: 334px;
+  z-index: 2;
+  position: relative;
+  margin: 10px auto 20px;
+  background-color: #fff;
+  border: 1px solid #f5f5f5;
+}
+.box .pic {
+  display: block;
+  margin: 5px;
+  width: 180px;
+  height: 275px;
+}
+.box .pic img {
+  width: 100%;
+  height: 100%;
+}
+.box .desc {
+  display: block;
+  height: 27px;
+  padding: 0 4px;
+  margin-bottom: 0;
+  line-height: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.box .desc-more {
+  position: absolute;
+  display: none;
+  z-index: 9;
+  top: 346px;
+  left: 5px;
+}
+.box .desc-more p {
+  margin-bottom: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.box .desc-more p .label {
+  color: #999;
+}
+.box .bg-box {
+  width: 218px;
+  height: 415px;
+  display: none;
+  left: -15px;
+  top: -10px;
+  z-index: 8;
+  background-color: #fff;
+  position: absolute;
+  box-shadow: 0 0 3px #eee;
+  border: 1px solid #dbdbdb;
+}
+.box .hover {
+  position: relative;
+  z-index: 19;
+}
+.box:hover {
+  z-index: 3;
+}
+.box:hover .bg-box {
+  display: block;
+  z-index: 11;
+}
+.box:hover .desc-more {
+  display: block;
+  z-index: 19;
+}
+.box:hover .hover {
+  z-index: 19;
+}
+.option {
+  display: block;
+  height: 28px;
+  background-color: #f2fbff;
+  border: 1px solid #eee;
+  margin-left: -1px;
+  margin-right: -1px;
+}
+.use {
+  line-height: 28px;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  color: #00a1e8;
+}
+.use-min {
+  width: 150px;
+  border-right: 1px solid #eee;
+}
+.ww {
+  float: right;
+  margin: 6px 8px 0 0;
+  width: 21px;
+  height: 18px;
+  display: inline-block;
+  background: url(//gtms01.alicdn.com/tps/i1/TB18EBKFVXXXXcbXVXXoq9FFpXX-21-18.png) no-repeat;
+}
+.ww-light {
+  margin-left: 6px;
+  vertical-align: top;
+}
+.sui-pagination {
+  text-align: center;
+}
+.desc-all {
+  padding: 0 4px;
+}
+.desc-all > .desc {
+  padding: 0;
+  float: left;
+  width: 135px;
+}
+.desc-all > .duan {
+  float: right;
+  margin-top: 4px;
+}

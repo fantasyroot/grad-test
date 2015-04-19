@@ -1,0 +1,312 @@
+::-webkit-scrollbar{width:8px;height:10px;background-color:#fcfbf9;}
+::-webkit-scrollbar-thumb{background-color: #bbb;border-radius: 10px;}
+::-webkit-scrollbar-thumb:hover{background-color: #bbb;}
+::-webkit-scrollbar-thumb:active{background-color: #bbb;}
+::-webkit-scrollbar-track{background-color: #eee}
+::-webkit-scrollbar-track-piece{background-color: #eee}
+::-webkit-scrollbar-corner{background-color: rgba(0,0,0,.2);}
+
+#top-header,#seller-nav{
+	font: 12px/1.5 tahoma,arial;
+}
+
+#top-header h1{
+	margin: 0;
+}
+
+#seller-nav h3{
+	font-size: 100%;
+	margin: 0;
+	line-height: 22px;
+}
+
+#top-header h2,#top-header h4{
+	font-size: 100%;
+	margin: 0;
+}
+
+#top-header p{
+	margin-bottom: 0;
+}
+
+#seller-nav li{
+	line-height: 25px;
+}
+
+.wrap{
+	text-align: center;
+	background: #d4663d url(http://gtms03.alicdn.com/tps/i3/TB1Iz49HXXXXXcQXFXXVTpC1VXX-1680-1078.jpg) top center no-repeat;
+	font-size: 13px;
+	margin-bottom: -100px;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+*:focus{
+	outline: 0;
+}
+
+#treasure{
+	width: 600px;
+	height: 500px;
+	margin: 0px auto;
+	top: 80px;
+	background: url(http://gtms02.alicdn.com/tps/i2/TB1eoV3HXXXXXb_aXXXFtsgLXXX-708-568.png)  no-repeat;
+	background-size: 100%;
+	position: relative;
+}
+
+#chui{
+	position: absolute;
+	transition: transform .2s;
+	left: 900px;
+	top: 400px;
+	display: none;
+}
+
+#gold{
+	width: 400px;
+	height: 270px;
+	position: absolute;
+	left: 100px;
+	top: 210px;
+	background: url(http://gtms02.alicdn.com/tps/i2/TB1hiqeHXXXXXceXXXXLvfa9VXX-554-337.gif)  0 30px no-repeat;
+	background-size: 100%;
+}
+
+.wen{
+	position: absolute;
+	transition: height 1.2s;
+	height: 0;
+}
+
+#box{
+	position: absolute;
+	left:140px;
+	top: 230px;
+	display:none;
+}
+
+#value{
+	width:224px;
+	height: 165px;
+	position: absolute;
+	left:-140px;
+	top:360px;
+	background: url(http://gtms04.alicdn.com/tps/i4/TB1gvOaHXXXXXcVXpXXF6uw4VXX-224-165.png)  no-repeat;
+	background-size: 100%;
+}
+
+.bg{
+	display:none;
+	position:fixed;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	opacity:1;
+}
+
+div.twindow{
+	display:none;
+	width:320px;
+	height:220px;
+	position:fixed;
+	margin: auto;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	background: url(http://gtms02.alicdn.com/tps/i2/TB16BKcHXXXXXaMXpXXVeM.0pXX-318-214.png) no-repeat;
+	background-size: 100%;
+	z-index: 10;
+	color: #ffec8d;
+	opacity:0.92;
+}
+
+span.thead{
+	display: block;
+	font-size: 28px;
+	font-weight: 600;
+	padding-top:50px;
+}
+
+span.tcontent{
+	font-size: 15px;
+	display: block;
+	margin-top: 20px;
+}
+
+.tbutton{
+	display: block;
+	width: 142px;
+	height: 40px;
+	position: relative;
+	border: 0px;
+	left:90px;
+	top:40px;
+	background: url(http://gtms04.alicdn.com/tps/i4/TB1a9d9HXXXXXcPXFXXuKW_FpXX-142-40.png) no-repeat;
+	background-size: 100%;
+	color: #0d9975;
+	font-size: 20px;
+	font-weight: 600;
+	font-family: "Microsoft YaHei" ! important;
+}
+
+#openBoxButton{
+	font-family: "Microsoft Yahei","SimSun",sans-serif !important;
+	display: none;
+	left: 0;
+	top: 375px;
+	z-index: 5;
+}
+
+div.closeWindow{
+	position: relative;
+	left:280px;
+	top:-150px;
+	width:37px;
+	height: 37px;
+	background: url(http://gtms01.alicdn.com/tps/i1/TB1KeR6HXXXXXXDaXXXGEZzGpXX-37-37.png) center no-repeat;
+	background-size: 100%;
+	cursor: pointer;
+}
+
+div#main{
+	width: 1000px;
+	margin: 150px auto 0;
+	text-align: left;
+	position: relative;
+}
+
+.cgroup{
+
+	margin-top: 30px;
+}
+
+.chead{
+	border-radius: 5px 5px 0 0;
+	padding: 10px 20px 10px 60px;
+	height: 25px;
+	font-weight: 800;
+	font-size: 20px;
+	color: #ffe845;
+}
+
+.ccontent{
+	border-radius: 0 0 5px 5px;
+	padding: 15px 60px 15px;
+	background-color: #7e3418;
+	color: #ffa482;
+	line-height: 18px;
+	white-space:nowrap;
+	overflow: hidden;
+}
+
+.ccontent_rules{
+	overflow: auto;
+	white-space: normal;
+	padding-right: 45px;
+	padding-bottom: 30px;
+	line-height: 40px;
+}
+
+.ccontent_template{
+	padding-left: 10px;
+	padding-right: 10px;
+	overflow: auto;
+	white-space: normal;
+}
+
+.ccontent h4{
+	color: #ffe845;
+	font-weight: normal;
+	font-size: 16px;
+}
+
+.ccontent ul{
+	list-style-type: none;
+}
+
+.ccontent ul li{
+	display: inline-block;
+	width: 240px;
+}
+
+.ccontent ol{
+	padding-left: 2em;
+	padding-bottom: 10px;
+	list-style-type: decimal;
+	list-style: decimal;
+}
+
+.ccontent ol li{
+	margin-top: 5px;
+}
+
+#winners{
+	background: #6a2910 url(http://gtms01.alicdn.com/tps/i1/TB172R9HXXXXXc9XFXXrwGYFVXX-27-34.png) 15px 8px no-repeat;
+}
+
+#howPlay{
+	background: #6a2910 url(http://gtms01.alicdn.com/tps/i1/TB1rdX8HXXXXXaFXVXX8eu5GXXX-33-27.png) 15px 8px no-repeat;
+}
+
+#recommendTem{
+	background: #6a2910 url(http://gtms03.alicdn.com/tps/i3/TB10kN7HXXXXXaMXVXXEDhGGXXX-32-32.png) 15px 8px no-repeat;
+}
+
+.right{
+	float:right;
+	height:20px;
+	display: block;
+	font-size: 12px;
+	color: #ffe845;
+	font-weight: normal;
+}
+
+.useTemplateBtn{
+	display: block;
+	width: 151px;
+	height: 41px;
+	position: relative;
+	border: 0px;
+	left:15px;
+	top:15px;
+	background: url(http://gtms03.alicdn.com/tps/i3/TB1WfaXHXXXXXaXXFXXF2znFVXX-151-41.png) no-repeat;
+	background-size: 100%;
+	padding-bottom: 10px;
+	color: #015d49;
+	font-size: 18px;
+	font-weight: 600;
+	font-family: "Microsoft YaHei" ! important;
+}
+
+ul.templateUl{
+	position: relative;
+}
+
+ul.templateUl li{
+	width: 180px;
+	height: 350px;
+	margin-left: 10px;
+}
+
+#bottom_left{
+	position: relative;
+	top: -130px;
+	left: -470px;
+
+}
+
+#bottom_right{
+	position: relative;
+	top: -100px;
+	left: 470px;
+}
+
+#footer{
+	background-color: #d4663d;
+}
