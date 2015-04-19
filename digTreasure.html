@@ -5,150 +5,140 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>挖矿赢红包</title>
 	<link rel="stylesheet" href="http://g.alicdn.com/sj/dpl/1.4.3/css/sui.min.css">
-	<!--link rel="stylesheet" href="http://g.assets.daily.taobao.net/sj/detail-edit-operation/0.0.1/CSS/style.css"-->
+    <link rel="stylesheet" href="build/CSS/shake.min.css">
+    <link rel="stylesheet" href="build/CSS/animate.css">
+    <link rel="stylesheet" href="build/CSS/jquery.fullPage.min.css">
     <link rel="stylesheet" href="build/CSS/style.css">
-	<link rel="stylesheet" href="build/CSS/shake.min.css">
-	<link rel="stylesheet" href="build/CSS/animate.css">
-	<script src="http://g.tbcdn.cn/tb/tracker/1.0.16/index.js"></script>
-	<script src="http://g.alicdn.com/sj/lib/jquery.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 挖矿  -->
+        <div class="section" id="section0">
+        	<div id="treasure">
+        		<div id="gold"></div>
+        		<div id="value"></div>
+        		<img id="box" src="http://gtms03.alicdn.com/tps/i3/TB1K3KbHXXXXXciXpXX36op1FXX-323-224.png" height="224" width="323" />
+                <button class="tbutton" id="openBoxButton">
+                    <span>打开宝箱</span>
+                </button>
+        	</div>
+
+        	<img id="chui" src="http://gtms01.alicdn.com/tps/i1/TB1nPp9HXXXXXbqXFXXKdQq.VXX-128-0.ico" height="128" width="128" />
+
+            <!-- 弹窗 -->
+        	<div class="bg"></div>
+
+        	<div id="prizeResult" class="twindow">
+        		<span class="thead"></span>
+                <span class="tcontent"></span>
+        		<button class="tbutton">
+        			<span class="sync">参加毕设</span>
+        		</button>
+        		<div class="closeWindow"></div>
+        	</div>
+
+            <div id="loadInfo" class="twindow">
+                <span class="thead"></span>
+                <span class="tcontent"></span>
+                <button class="tbutton">
+                    <span class="okexit">好的</span>
+                </button>
+                <div class="closeWindow"></div>
+            </div>
+        </div>
+
+        <!-- 内容 -->
+
+        <div class="section" id="section1">
+    		<div class="cgroup">
+    			<div class="chead" id="winners">中奖名单</div>
+    			<div class="ccontent">
+    				<ul id="winnerList" style="position:relative">
+    				</ul>
+    			</div>
+    		</div>
+
+
+    		<div class="cgroup">
+    			<div class="chead" id="howPlay">玩法</div>
+    			<div class="ccontent ccontent_rules">
+    				<h4>活动时间：</h4>
+    				2015年6月14日08:00-6月15日24:00
+    				<h4>活动规则：</h4>
+    				<ol>
+                        <li>如获得红包，系统会在此活动页面中提示并展示红包金额，获得的红包将在活动结束之后，统一发送至您账户中。红包不得提现，不得转赠他人。</li>
+                        <li>红包使用时间：本次活动红包由发放日期开始计算，使用有效期为3个月，逾期作废。</li>
+                        <li>本次活动所发放的红包奖励将在活动结束后的15个工作日内发放至您账户。</li>
+                        <li>本次活动所发放的红包不支持退款、提现和转账。</li>
+                        <li>凡以不正当手段（包括但不限于上传的活动内容非原创或侵犯第三人合法权利、虚假交易、作弊、扰乱系统、实施网络攻击等）参与本次活动的用户，主办方有权终止其参与活动，取消其获奖资格（如红包已发放，主办方有权追回）。</li>
+                        <li>如出现不可抗力或情势变更的情况（包括但不限于重大灾害事件、活动受政府机关指令需要停止举办或调整的、活动遭受严重网络攻击或因系统故障需要暂停举办的），则活动主办方可依相关法律法规的规定主张免责。</li>
+                        <li>主办方可根据活动举办的实际情况，在法律允许的范围内，对本活动规则进行变动或调整，相关变动或调整将公布在活动规则页面上。</li>
+    				</ol>
+    			</div>
+    		</div>
+        </div>
+
+        <div class="section" id="section2">
+    		<div class="cgroup">
+    			<div class="chead" id="recommendTem">优秀毕设推荐<a href="#"><span class="right">点击更多&gt;</span></a></div>
+    			<div class="ccontent ccontent_template">
+    				<ul class="templateUl">
+    					<li><img src="http://gtms01.alicdn.com/tps/i1/TB1ABJYHFXXXXc0XFXXcVVVWVXX-629-960.jpg" height="275" width="180" /><a href="#"><button class="useTemplateBtn">点击查看</button></a></li>
+                        <li><img src="http://gtms04.alicdn.com/tps/i4/TB1SHlYHFXXXXXDXVXXm1X6FVXX-748-1143.jpg" height="275" width="180" /><a href="#"><button class="useTemplateBtn">点击查看</button></a></li>
+                        <li><img src="http://gtms03.alicdn.com/tps/i3/TB11OV7HFXXXXXMXXXXY0gtVFXX-523-798.jpg" height="275" width="180" /><a href="#"><button class="useTemplateBtn">点击查看</button></a></li>
+                        <li><img src="http://gtms01.alicdn.com/tps/i1/TB1ABJYHFXXXXc0XFXXcVVVWVXX-629-960.jpg" height="275" width="180" /><a href="#"><button class="useTemplateBtn">点击查看</button></a></li>
+                        <li><img src="http://gtms03.alicdn.com/tps/i3/TB11OV7HFXXXXXMXXXXY0gtVFXX-523-798.jpg" height="275" width="180" /><a href="#"><button class="useTemplateBtn">点击查看</button></a></li>
+    				</ul>
+    			</div>
+            </div>
+            <!-- 左右装饰  -->
+            <img id="bottom_left" src="http://gtms04.alicdn.com/tps/i4/TB1sfuaHXXXXXc4XpXXpg3s1VXX-109-148.png" height="148" width="109" />
+            <img id="bottom_right" src="http://gtms02.alicdn.com/tps/i2/TB1gyzOGVXXXXbwaXXX4xpTJXXX-82-64.png" height="64" width="82"/>
+		</div>
+
+
+    </div>
+
+    <script src="http://lib.sinaapp.com/js/jquery/2.0.3/jquery-2.0.3.min.js"></script>
+    <script src="http://g.tbcdn.cn/tb/tracker/1.0.16/index.js"></script>
     <script src="js/log.js"></script>
     <script>
         var URL_CONFIG = {
             winnerList: 'http://fuwu.daily.taobao.net/activity/lottery/get_winner.htm?act_id=201501',
             getLottery: 'http://fuwu.daily.taobao.net/activity/lottery/get_lottery.htm?act_id=201501',
             getStatus: 'http://fuwu.daily.taobao.net/activity/lottery/get_state.htm?act_id=201501',
-
-            loginUrl: 'https://login.daily.taobao.net/member/login.jhtml?spm=a21a6.7513991.0.0.hsMsQV&f=top&sub=true&redirectURL=http%3A%2F%2Fwww.taobao.com%2Fmarket%2Fcommon%2Fdigtreasure.html',
-            syncUrl: 'http://xiangqing.daily.taobao.net/template/item_list.htm'
+            syncUrl: 'http://www.dlmu.edu.cn'
         };
-
 
          //抽奖结果信息集
         var prizeResultNotes={
             "prize00":[
-                {head:"啊，没有金矿",notes:"再同步一个，可继续挖矿"},
-                {head:"宝箱飞了……",notes:"再同步个吧，中奖概率翻倍！"},
-                {head:"可惜……",notes:"晚了一步，再同步个试试吧"}
+                {head:"啊，没有金矿",notes:"参加毕设，可继续挖矿"},
+                {head:"宝箱飞了……",notes:"再参加个毕设，中奖概率翻倍！"},
+                {head:"可惜……",notes:"晚了一步，再参加个毕设试试吧"}
             ],
             "prize01":[
-                {head:"恭喜",notes:"您中了一等矿(2800￥)，再同步还能挖哦"},
-                {head:"哇塞",notes:"您挖到一等矿了(2800￥)，要不再同步个？"}
+                {head:"恭喜",notes:"您中了一等矿，再参加毕设还能挖哦"},
+                {head:"哇塞",notes:"您挖到一等矿了，要不再参加个毕设？"}
             ],
             "prize02":[
-                {head:"恭喜",notes:"您中了二等矿(100￥)，再同步还能挖哦"},
-                {head:"哇塞",notes:"您挖到二等矿了(100￥)，要不再同步个？"}
+                {head:"恭喜",notes:"您中了二等矿，再参加毕设还能挖哦"},
+                {head:"哇塞",notes:"您挖到二等矿了，要不再参加个毕设？"}
             ],
             "prize03":[
-                {head:"恭喜",notes:"您中了三等矿(50￥)，再同步还能挖哦"},
-                {head:"哇塞",notes:"您挖到三等矿了(50￥)，要不再同步个？"}
+                {head:"恭喜",notes:"您中了三等矿，再参加毕设还能挖哦"},
+                {head:"哇塞",notes:"您挖到三等矿了，要不再参加个毕设？"}
             ],
             "prize04":[
-                {head:"恭喜",notes:"您中了欢乐矿(10￥)，再同步还能挖哦"},
-                {head:"哇塞",notes:"您挖到欢乐矿了(10￥)，要不再同步个？"}
+                {head:"恭喜",notes:"您中了欢乐矿，再参加毕设还能挖哦"},
+                {head:"哇塞",notes:"您挖到欢乐矿了，要不再参加个毕设？"}
             ]
         }
     </script>
+    <script src="js/jquery.easings.min.js"></script>
+    <script src="js/jquery.slimscroll.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
     <script src="js/digTreasure.js"></script>
-    <!-- script src="http://g.assets.daily.taobao.net/sj/detail-edit-operation/0.0.1/js/detail-edit-operation.min.js"></script -->
-    <script src="http://g.alicdn.com/sj/dpl/1.4.3/js/sui.min.js"></script>
-</head>
-<script>
-    window.__WPO&&window.__WPO.mark("whitescreen");
-    try{
-        with(window.JSTracker){
-            config("sampling",5);
-        }
-    }
-    catch(e){
 
-    }
-</script>
-<body>
-
-<div class="wrap">
-	<div id="treasure">
-		<div id="gold"></div>
-		<div id="value"></div>
-		<img id="box" src="http://gtms03.alicdn.com/tps/i3/TB1K3KbHXXXXXciXpXX36op1FXX-323-224.png" height="224" width="323" />
-        <button class="tbutton" id="openBoxButton">
-            <span>打开宝箱</span>
-        </button>
-	</div>
-
-	<img id="chui" src="http://gtms01.alicdn.com/tps/i1/TB1nPp9HXXXXXbqXFXXKdQq.VXX-128-0.ico" height="100" width="100" />
-
-	<div class="bg"></div>
-
-	<div id="prizeResult" class="twindow">
-		<span class="thead"></span>
-        <span class="tcontent"></span>
-		<button class="tbutton">
-			<span class="sync">点击同步</span>
-		</button>
-		<div class="closeWindow"></div>
-	</div>
-
-    <div id="loadInfo" class="twindow">
-        <span class="thead"></span>
-        <span class="tcontent"></span>
-        <button class="tbutton">
-            <span class="okexit">好的</span>
-        </button>
-        <div class="closeWindow"></div>
-    </div>
-
-
-	<div id="main">
-		<div class="cgroup">
-			<div class="chead" id="winners">中奖名单</div>
-			<div class="ccontent">
-				<ul id="winnerList" style="position:relative">
-				</ul>
-			</div>
-		</div>
-
-		<div class="cgroup">
-			<div class="chead" id="howPlay">玩法</div>
-			<div class="ccontent ccontent_rules">
-				<h4>活动时间：</h4>
-				2015年1月23日10:00-1月30日24:00
-				<h4>活动规则：</h4>
-				<ol>
-					<li>本次活动涉及的红包为淘宝/天猫直通车红包（以下简称直通车红包）。</li>
-					<li>参与方式：在淘宝神笔（xiangqing.taobao.com）中选择您喜欢的模板，再选择一个已上架的宝贝进行编辑（将模板内的图片、文字等替换成您自己的宝贝内容，也可添加链接。操作指导请点此查看），编辑完之后点击同步至自己的宝贝详情。每同步成功1个不同的宝贝，即可获得1次红包抽奖机会。红包为系统自动抽取，活动期间每个店铺ID至多中奖1次。</li>
-					<li>中奖用户请于2月6号24点之前确保中奖账户的直通车功能已开通，如过期未开通，则视为放弃本次中奖红包。</li>
-                    <li>如获得红包，系统会在此活动页面中提示并展示红包金额，获得的红包将在活动结束之后，统一发送至您账号所开通的直通车账户中。红包不得提现，不得转赠他人。</li>
-                    <li>红包使用时间：本次活动红包由发放日期开始计算，使用有效期为3个月，逾期作废。</li>
-                    <li>本次活动所发放的直通车红包奖励将在活动结束后的15个工作日内发放至您的淘宝/天猫直通车账户，届时您可登陆淘宝/天猫直通车直通车后台进行查询。</li>
-                    <li>本次活动所发放的直通车红包仅限于淘宝/天猫直通车推广花费使用，不支持退款、提现和转账。</li>
-                    <li>凡以不正当手段（包括但不限于上传的活动内容非原创或侵犯第三人合法权利、虚假交易、作弊、扰乱系统、实施网络攻击等）参与本次活动的用户，淘宝有权终止其参与活动，取消其获奖资格（如红包已发放，淘宝有权追回）。</li>
-                    <li>如出现不可抗力或情势变更的情况（包括但不限于重大灾害事件、活动受政府机关指令需要停止举办或调整的、活动遭受严重网络攻击或因系统故障需要暂停举办的），则活动主办方可依相关法律法规的规定主张免责。</li>
-                    <li>淘宝可根据活动举办的实际情况，在法律允许的范围内，对本活动规则进行变动或调整，相关变动或调整将公布在活动规则页面上。</li>
-				</ol>
-			</div>
-		</div>
-
-		<div class="cgroup">
-			<div class="chead" id="recommendTem">优秀模板推荐<a href="#"><span class="right">点击更多&gt;</span></a></div>
-			<div class="ccontent ccontent_template">
-				<ul class="templateUl">
-					<li><img src="http://gtms04.alicdn.com/tps/i4/TB1TP9bHXXXXXbOXpXXuRkVYXXX-180-275.jpg" height="275" width="180" /><a href="#"><button class="useTemplateBtn">点击使用</button></a></li>
-                    <li><img src="http://gtms04.alicdn.com/tps/i4/TB1TP9bHXXXXXbOXpXXuRkVYXXX-180-275.jpg" height="275" width="180" /><a href="#"><button class="useTemplateBtn">点击使用</button></a></li>
-                    <li><img src="http://gtms04.alicdn.com/tps/i4/TB1TP9bHXXXXXbOXpXXuRkVYXXX-180-275.jpg" height="275" width="180" /><a href="#"><button class="useTemplateBtn">点击使用</button></a></li>
-                    <li><img src="http://gtms04.alicdn.com/tps/i4/TB1TP9bHXXXXXbOXpXXuRkVYXXX-180-275.jpg" height="275" width="180" /><a href="#"><button class="useTemplateBtn">点击使用</button></a></li>
-                    <li><img src="http://gtms04.alicdn.com/tps/i4/TB1TP9bHXXXXXbOXpXXuRkVYXXX-180-275.jpg" height="275" width="180" /><a href="#"><button class="useTemplateBtn">点击使用</button></a></li>
-                    <li><img src="http://gtms04.alicdn.com/tps/i4/TB1TP9bHXXXXXbOXpXXuRkVYXXX-180-275.jpg" height="275" width="180" /><a href="#"><button class="useTemplateBtn">点击使用</button></a></li>
-                    <li><img src="http://gtms04.alicdn.com/tps/i4/TB1TP9bHXXXXXbOXpXXuRkVYXXX-180-275.jpg" height="275" width="180" /><a href="#"><button class="useTemplateBtn">点击使用</button></a></li>
-                    <li><img src="http://gtms04.alicdn.com/tps/i4/TB1TP9bHXXXXXbOXpXXuRkVYXXX-180-275.jpg" height="275" width="180" /><a href="#"><button class="useTemplateBtn">点击使用</button></a></li>
-                    <li><img src="http://gtms04.alicdn.com/tps/i4/TB1TP9bHXXXXXbOXpXXuRkVYXXX-180-275.jpg" height="275" width="180" /><a href="#"><button class="useTemplateBtn">点击使用</button></a></li>
-                    <li><img src="http://gtms04.alicdn.com/tps/i4/TB1TP9bHXXXXXbOXpXXuRkVYXXX-180-275.jpg" height="275" width="180" /><a href="#"><button class="useTemplateBtn">点击使用</button></a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-
-	<img id="bottom_left" src="http://gtms04.alicdn.com/tps/i4/TB1sfuaHXXXXXc4XpXXpg3s1VXX-109-148.png" height="148" width="109" />
-	<img id="bottom_right" src="http://gtms02.alicdn.com/tps/i2/TB1gyzOGVXXXXbwaXXX4xpTJXXX-82-64.png" height="64" width="82"/>
-</div>
 </body>
 </html>

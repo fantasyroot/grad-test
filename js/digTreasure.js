@@ -10,34 +10,13 @@ $(function(){
     var wenLargeUrl="http://gtms04.alicdn.com/tps/i4/TB1DUd7HXXXXXa7XVXX_ZLfJXXX-83-63.png";
     var status="";  //当前状态，初始为正常状态
     createWen(hitAllTimes+1);   //创建hitAllTimes+1条裂纹
-    // getStatus(); //请求当前状态：如果未登录就跳转到登陆页面
-    // hitTimesAmount=0;
 
-    /*请求当前状态：活动未开始/用户未登录/没有抽奖资格/可用状态
-    function getStatus(){
-        $.ajax({
-            url:URL_CONFIG.getStatus,
-            dataType:"jsonp",
-            jsonp:"jsoncallback",
-            success:function(data){
-                switch(data){
-                    case "AvailableState":
-                        status="";
-                    break;
-                    case "UnLoginState": //未登录
-                        window.location.href=URL_CONFIG.loginUrl; //还要改成登陆页，登陆后回来
-                        break;
-                    case "UnableState": //活动未开始
-                        status="notStart";
-                        break;
-                    default:  //没有抽奖资格
-                        status="noQualification";
-                        break;
-                }
-            }
-        });
-    }
-    */
+
+     $('#wrap').fullpage({
+        scrollBar: true,
+        navigation: true,
+        navigationColor: "#fff"
+    });
 
     //请求中奖名单
     $.ajax({
@@ -49,14 +28,14 @@ $(function(){
             var $ul=$('#winnerList');
             $.each(data,function(index){
                 list+="<li>"+data[index].name+"中了"+convertPrize(data[index].prize)+"红包</li>";
-            });    
+            });
             $ul.html(list);
              //中奖名单轮播
             var width=240;  //每个中奖名单长度是240px
             if($ul.children().length>4){
                 setInterval(function(){
                     if(parseFloat($ul.css("left"))<($ul.children().length-5)*(-width)){
-                        $ul.css("left",width+"px");     
+                        $ul.css("left",width+"px");
                     }
                     $ul.animate({
                         left: '-='+width+"px"
@@ -94,7 +73,7 @@ $(function(){
         setTimeout(function(){   //防止双击时直接出现了宝箱，因为必须要点两次
             hitTimes++;
         }, 1500);
-        
+
         $hitchui.css({"left":e.pageX,"top":e.pageY}).show().css("transform","rotate(10deg)");  //蓄力，锤子向上旋转
         setTimeout(function(){
             $hitchui.css("transform","rotate(-20deg)");  //0.2s后，锤子旋转到最底部
@@ -102,11 +81,11 @@ $(function(){
                 $hitchui.css("transform","rotate(0)"); //0.4s后，锤子回到正常位置
                 $gold.addClass('shake shake-hard shake-constant');  //金矿抖动
                 $(".wen").addClass('shake shake-hard shake-constant');
-                if(hitTimes<hitAllTimes){ 
+                if(hitTimes<hitAllTimes){
                     setTimeout(function(){
                         $(".wen").eq(hitTimes).css("background","url("+wenSmallUrl+")").css({"left":e.pageX-40,"top":e.pageY+65}).css({"height":"63px","width":"83px"});  //显示第hitTimes条裂纹
                     }, 300);
-                    
+
                     //重新获取当前状态，保证同步后继续点击时不需要重新刷新页面
                     $.ajax({
                         url:URL_CONFIG.getStatus,
@@ -118,7 +97,7 @@ $(function(){
                                     status="";
                                 break;
                                 case "UnLoginState": //未登录
-                                    window.location.href=URL_CONFIG.loginUrl; //还要改成登陆页，登陆后回来
+                                    status="";
                                     break;
                                 case "UnableState": //活动未开始
                                     status="notStart";
@@ -127,6 +106,11 @@ $(function(){
                                     status="noQualification";
                                     break;
                             }
+
+                            //************   测试   ***************
+                            status="";
+                            //*************************************
+
                             if(status=="notStart"){
                                 $('.bg').fadeIn(200);
                                 $("#loadInfo").children('.thead').text("活动还未开始");
@@ -146,9 +130,6 @@ $(function(){
                         }
                     });
 
-                    //************   测试   ***************
-                    //status="";
-                    //*************************************
 
                     setTimeout(function(){
                         $gold.removeClass('shake shake-hard shake-constant').css("cursor","url("+cursorChuiUrl+"),auto").bind("mouseover",useChui);  //0.9s后，取消金矿抖动，并让鼠标恢复锤子样式
@@ -156,12 +137,12 @@ $(function(){
                         $hitchui.hide();
                     }, 500);
                 }
-                else{ 
+                else{
                     setTimeout(function(){ //显示最后一条裂纹
                         $(".wen").eq(hitTimes).css({"background":"url("+wenLargeUrl+"),no-repeat","background-size":"100%"}).css({"left":e.pageX-72,"top":e.pageY+65}).css({"height":"98px","width":"133px"});
                     }, 300);
                     timerBoxOut=setTimeout(function(){ //0.9s后，取消金矿抖动，并让鼠标恢复锤子样式
-                        $gold.removeClass('shake shake-hard shake-constant').css("cursor","url("+cursorChuiUrl+"),auto").bind("mouseover",useChui);  
+                        $gold.removeClass('shake shake-hard shake-constant').css("cursor","url("+cursorChuiUrl+"),auto").bind("mouseover",useChui);
                         $(".wen").removeClass('shake shake-hard shake-constant');
                         $hitchui.hide();
                         if(hitTimes==hitAllTimes||hitTimes==hitAllTimes+1){
@@ -170,13 +151,13 @@ $(function(){
                             }, 1000);
                         }
                     }, 500);
-                } 
+                }
             }, 200);
         }, 200);
     });
 
     //金矿消失，出现宝箱
-    function boxOut(){  
+    function boxOut(){
         $("#gold").fadeOut(600);
         $("#chui").hide();
         removeAllWen();
@@ -192,18 +173,19 @@ $(function(){
     $("#openBoxButton").click(function(event) {
         // hitTimesAmount++;
         // JSTracker.log('该页面总抽奖次数'+hitTimesAmount);
+        $(".bg").css({"opacity":".6","background-color":"#000"});
         $(this).hide();
         $.ajax({
             url: URL_CONFIG.getLottery,
             dataType: 'jsonp',
             jsonp: "jsoncallback",
-            success:function(data){  
+            success:function(data){
                 if(data.award=="0"){   //对象名不能是纯数字，要转换成字符串
                     data.award="prize00";
                 }
 
                 //*************  测试  *******************
-                     //data.award="prize03";
+                     data.award="prize03";
                 //****************************************
 
                 //随机使用该矿奖的中奖信息
@@ -213,7 +195,7 @@ $(function(){
 
                 $('#prizeResult').fadeIn(400).addClass('animated bounceIn');
             }
-        });     
+        });
     });
 
     //点击同步按钮
@@ -239,12 +221,13 @@ $(function(){
     function goAgain(){
         $('.twindow').hide();
         $("#openBoxButton").hide();
+        $(".bg").css({"opacity":"1","background-color":""});
         $('.bg').fadeOut(200);
         $("#box").hide();
         $("#gold").show();
         hitTimes=0;  //重置点击次数
         removeAllWen();
-        createWen(hitAllTimes+1); 
+        createWen(hitAllTimes+1);
     }
 
     function createWen(num){   //创建裂纹
@@ -258,10 +241,3 @@ $(function(){
     }
 
 });
-
-window.onload=function(){
-    setTimeout(function(){
-        window.scrollTo(0,170);
-    }, 100);
-    
-};

@@ -6,36 +6,13 @@
 ::-webkit-scrollbar-track-piece{background-color: #eee}
 ::-webkit-scrollbar-corner{background-color: rgba(0,0,0,.2);}
 
-#top-header,#seller-nav{
-	font: 12px/1.5 tahoma,arial;
+body{
+	background-color: #d4663d;
 }
 
-#top-header h1{
-	margin: 0;
-}
-
-#seller-nav h3{
-	font-size: 100%;
-	margin: 0;
-	line-height: 22px;
-}
-
-#top-header h2,#top-header h4{
-	font-size: 100%;
-	margin: 0;
-}
-
-#top-header p{
-	margin-bottom: 0;
-}
-
-#seller-nav li{
-	line-height: 25px;
-}
-
-.wrap{
+#wrap{
 	text-align: center;
-	background: #d4663d url(http://gtms03.alicdn.com/tps/i3/TB1Iz49HXXXXXcQXFXXVTpC1VXX-1680-1078.jpg) top center no-repeat;
+	background: #d4663d url(http://gtms02.alicdn.com/tps/i2/TB1MZh0HFXXXXXtXFXXVTpC1VXX-1680-1078.jpg) top center no-repeat;
 	font-size: 13px;
 	margin-bottom: -100px;
 }
@@ -52,8 +29,8 @@ a:hover{
 	width: 600px;
 	height: 500px;
 	margin: 0px auto;
-	top: 80px;
-	background: url(http://gtms02.alicdn.com/tps/i2/TB1eoV3HXXXXXb_aXXXFtsgLXXX-708-568.png)  no-repeat;
+	top: 0px;
+	background: url(http://gtms01.alicdn.com/tps/i1/TB1Lz0QHFXXXXXuaXXXFtsgLXXX-708-568.png)  no-repeat;
 	background-size: 100%;
 	position: relative;
 }
@@ -61,8 +38,6 @@ a:hover{
 #chui{
 	position: absolute;
 	transition: transform .2s;
-	left: 900px;
-	top: 400px;
 	display: none;
 }
 
@@ -95,7 +70,7 @@ a:hover{
 	position: absolute;
 	left:-140px;
 	top:360px;
-	background: url(http://gtms04.alicdn.com/tps/i4/TB1gvOaHXXXXXcVXpXXF6uw4VXX-224-165.png)  no-repeat;
+	background: url(http://gtms04.alicdn.com/tps/i4/TB1d8pNHFXXXXXTaXXXF6uw4VXX-224-165.png)  no-repeat;
 	background-size: 100%;
 }
 
@@ -106,7 +81,7 @@ a:hover{
 	height:100%;
 	top:0;
 	left:0;
-	opacity:1;
+	opacity: 1;
 }
 
 div.twindow{
@@ -181,8 +156,25 @@ div#main{
 	position: relative;
 }
 
-.cgroup{
+div#section1{
+	width: 1000px;
+	margin: 0 auto 0;
+	text-align: left;
+	position: relative;
+}
 
+div#section2{
+	width: 1000px;
+	margin: 0 auto 0;
+	text-align: left;
+	position: relative;
+}
+
+#fp-nav ul li a span{
+	background: #692913;
+}
+
+.cgroup{
 	margin-top: 30px;
 }
 
@@ -296,15 +288,15 @@ ul.templateUl li{
 
 #bottom_left{
 	position: relative;
-	top: -130px;
-	left: -470px;
+	top: -120px;
+	left: -80px;
 
 }
 
 #bottom_right{
 	position: relative;
-	top: -100px;
-	left: 470px;
+	top: -90px;
+	left: 860px;
 }
 
 #footer{
