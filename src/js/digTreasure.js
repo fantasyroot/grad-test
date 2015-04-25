@@ -11,12 +11,28 @@ $(function(){
     var status="";  //当前状态，初始为正常状态
     createWen(hitAllTimes+1);   //创建hitAllTimes+1条裂纹
 
-
+    //分屏
     $('#wrap').fullpage({
         scrollBar: true,
         navigation: true,
-        navigationColor: "#fff"
+        navigationColor: "#fff",
+        afterLoad: function(anchorLink, index){
+            var loadedSection = $(this);
+
+            //using index 懒加载
+            if(index == 3){ //滚动到第3屏时
+                setTimeout(function(){
+                    $(".templateUl img").each(function(){
+                        $(this).attr("src",$(this).attr("data-src"));
+                    });
+                }, 1500);
+            }
+        }
     });
+
+    //list图片懒加载的占位图
+    $(".templateUl img").attr("src","http://img.alicdn.com/tps/i1/TB1Q4fJFVXXXXXiXFXXJgUmHVXX-184-38.gif");
+
 
     //请求中奖名单
     $.ajax({
