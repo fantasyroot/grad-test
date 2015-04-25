@@ -12,7 +12,7 @@ $(function(){
     createWen(hitAllTimes+1);   //创建hitAllTimes+1条裂纹
 
 
-     $('#wrap').fullpage({
+    $('#wrap').fullpage({
         scrollBar: true,
         navigation: true,
         navigationColor: "#fff"
