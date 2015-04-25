@@ -1,7 +1,14 @@
 var http = require("http");
+var url = require('url');
 
-http.createServer(function(request, response) {
-	response.writeHead(200, {"Content-Type": "text/plain"});
-	response.write('jQuery203027518601110205054_1429618054315([{"name":"t**c","prize":"prize01"},{"name":"t**c","prize":"prize01"},{"name":"t**c","prize":"prize01"}])');
-	response.end();
-}).listen(8888);
+function start(route, handle){
+	http.createServer(function(req, res) {
+
+		var params = url.parse(req.url, true); //true => {name:'a',id:'5'} //false => name=a&id=5
+		route(handle, params, res);
+
+	}).listen(8888);
+	console.log("Server has started at port 8888.");
+}
+
+exports.start = start;
