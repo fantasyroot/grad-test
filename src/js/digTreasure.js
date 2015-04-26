@@ -17,8 +17,6 @@ $(function(){
         navigation: true,
         navigationColor: "#fff",
         afterLoad: function(anchorLink, index){
-            var loadedSection = $(this);
-
             //using index 懒加载
             if(index == 3){ //滚动到第3屏时
                 setTimeout(function(){
@@ -187,8 +185,6 @@ $(function(){
 
     //打开宝箱
     $("#openBoxButton").click(function(event) {
-        // hitTimesAmount++;
-        // JSTracker.log('该页面总抽奖次数'+hitTimesAmount);
         $(".bg").css({"opacity":".6","background-color":"#000"});
         $(this).hide();
         $.ajax({
