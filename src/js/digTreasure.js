@@ -31,7 +31,6 @@ $(function(){
     //list图片懒加载的占位图
     $(".templateUl img").attr("src","http://img.alicdn.com/tps/i1/TB1Q4fJFVXXXXXiXFXXJgUmHVXX-184-38.gif");
 
-
     //请求中奖名单
     $.ajax({
         url: URL_CONFIG.winnerList,
