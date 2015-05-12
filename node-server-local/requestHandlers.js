@@ -1,7 +1,7 @@
 function get_winner(params, res){
 	console.log("Request handler 'get_winner' was called.");
     res.writeHead(200, { 'Content-Type': 'text/html' });
-    var data = [{"name":"t**c","prize":"prize01"},{"name":"t**c","prize":"prize01"},{"name":"t**c","prize":"prize01"}];
+    var data = [{"name":"t**c","prize":"prize01"},{"name":"e**a","prize":"prize03"},{"name":"t**4","prize":"prize02"},{"name":"a**4","prize":"prize04"},{"name":"t**2","prize":"prize01"},{"name":"t**c","prize":"prize01"}];
     if (params.query && params.query.jsoncallback) {
         var str =  params.query.jsoncallback + '(' + JSON.stringify(data) + ')'; //jsonp
         res.end(str);
