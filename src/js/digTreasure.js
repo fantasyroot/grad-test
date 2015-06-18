@@ -4,10 +4,10 @@ $(function(){
     var $gold=$("#gold");  //矿
     var hitAllTimes=1; //敲击总次数(从第0次开始)
     hitTimes=0;  //全局变量，第几次敲击，初始为0
-    var cursorChuiUrl="http://gtms01.alicdn.com/tps/i1/TB1nPp9HXXXXXbqXFXXKdQq.VXX-128-0.ico";
-    var transparentUrl="http://gtms04.alicdn.com/tps/i4/TB1fvGfHXXXXXaZXXXXjznUFXXX-16-16.ico";
-    var wenSmallUrl="http://gtms04.alicdn.com/tps/i4/TB1DUd7HXXXXXa7XVXX_ZLfJXXX-83-63.png";
-    var wenLargeUrl="http://gtms04.alicdn.com/tps/i4/TB1DUd7HXXXXXa7XVXX_ZLfJXXX-83-63.png";
+    var cursorChuiUrl="build/images/chui_03.ico";
+    var transparentUrl="build/images/transparent_03.ico";
+    var wenSmallUrl="build/images/wen2_03.png";
+    var wenLargeUrl="build/images/wen2_03.png";
     var status="";  //当前状态，初始为正常状态
     createWen(hitAllTimes+1);   //创建hitAllTimes+1条裂纹
 
@@ -29,7 +29,7 @@ $(function(){
     });
 
     //list图片懒加载的占位图
-    $(".templateUl img").attr("src","http://img.alicdn.com/tps/i1/TB1Q4fJFVXXXXXiXFXXJgUmHVXX-184-38.gif");
+    $(".templateUl img").attr("src","build/images/loading.gif");
 
     //请求中奖名单
     $.ajax({

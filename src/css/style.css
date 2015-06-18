@@ -12,7 +12,7 @@ body{
 
 #wrap{
 	text-align: center;
-	background: #d4663d url(http://gtms02.alicdn.com/tps/i2/TB1MZh0HFXXXXXtXFXXVTpC1VXX-1680-1078.jpg) top center no-repeat;
+	background: #d4663d url(../images/bg_01_01.jpg) top center no-repeat;
 	font-size: 13px;
 	margin-bottom: -100px;
 }
@@ -30,7 +30,7 @@ a:hover{
 	height: 500px;
 	margin: 0px auto;
 	top: 0px;
-	background: url(http://gtms01.alicdn.com/tps/i1/TB1Lz0QHFXXXXXuaXXXFtsgLXXX-708-568.png)  no-repeat;
+	background: url(../images/door_03.png)  no-repeat;
 	background-size: 100%;
 	position: relative;
 }
@@ -47,7 +47,7 @@ a:hover{
 	position: absolute;
 	left: 100px;
 	top: 210px;
-	background: url(http://gtms02.alicdn.com/tps/i2/TB1hiqeHXXXXXceXXXXLvfa9VXX-554-337.gif)  0 30px no-repeat;
+	background: url(../images/golds.gif)  0 30px no-repeat;
 	background-size: 100%;
 }
 
@@ -70,7 +70,7 @@ a:hover{
 	position: absolute;
 	left:-140px;
 	top:360px;
-	background: url(http://gtms04.alicdn.com/tps/i4/TB1d8pNHFXXXXXTaXXXF6uw4VXX-224-165.png)  no-repeat;
+	background: url(../images/goldValue_07.png)  no-repeat;
 	background-size: 100%;
 }
 
@@ -94,7 +94,7 @@ div.twindow{
 	right:0;
 	top:0;
 	bottom:0;
-	background: url(http://gtms02.alicdn.com/tps/i2/TB16BKcHXXXXXaMXpXXVeM.0pXX-318-214.png) no-repeat;
+	background: url(../images/twindow_bg_03.png) no-repeat;
 	background-size: 100%;
 	z-index: 10;
 	color: #ffec8d;
@@ -122,7 +122,7 @@ span.tcontent{
 	border: 0px;
 	left:90px;
 	top:40px;
-	background: url(http://gtms04.alicdn.com/tps/i4/TB1a9d9HXXXXXcPXFXXuKW_FpXX-142-40.png) no-repeat;
+	background: url(../images/button_bg_03.png) no-repeat;
 	background-size: 100%;
 	color: #0d9975;
 	font-size: 20px;
@@ -144,7 +144,7 @@ div.closeWindow{
 	top:-150px;
 	width:37px;
 	height: 37px;
-	background: url(http://gtms01.alicdn.com/tps/i1/TB1KeR6HXXXXXXDaXXXGEZzGpXX-37-37.png) center no-repeat;
+	background: url(../images/x_03.png) center no-repeat;
 	background-size: 100%;
 	cursor: pointer;
 }
@@ -239,15 +239,15 @@ div#section2{
 }
 
 #winners{
-	background: #6a2910 url(http://gtms01.alicdn.com/tps/i1/TB172R9HXXXXXc9XFXXrwGYFVXX-27-34.png) 15px 8px no-repeat;
+	background: #6a2910 url(../images/winners_03.png) 15px 8px no-repeat;
 }
 
 #howPlay{
-	background: #6a2910 url(http://gtms01.alicdn.com/tps/i1/TB1rdX8HXXXXXaFXVXX8eu5GXXX-33-27.png) 15px 8px no-repeat;
+	background: #6a2910 url(../images/howPlay_03.png) 15px 8px no-repeat;
 }
 
 #recommendTem{
-	background: #6a2910 url(http://gtms03.alicdn.com/tps/i3/TB10kN7HXXXXXaMXVXXEDhGGXXX-32-32.png) 15px 8px no-repeat;
+	background: #6a2910 url(../images/recommendTem_03.png) 15px 8px no-repeat;
 }
 
 .right{
@@ -267,7 +267,7 @@ div#section2{
 	border: 0px;
 	left:15px;
 	top:15px;
-	background: url(http://gtms03.alicdn.com/tps/i3/TB1WfaXHXXXXXaXXFXXF2znFVXX-151-41.png) no-repeat;
+	background: url(../images/template_btn_03.png) no-repeat;
 	background-size: 100%;
 	padding-bottom: 10px;
 	color: #015d49;

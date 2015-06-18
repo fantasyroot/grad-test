@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>挖矿赢红包</title>
-	<link rel="stylesheet" href="http://g.alicdn.com/sj/dpl/1.4.3/css/sui.min.css">
+	<link rel="stylesheet" href="src/css/sui.min.css">
     <link rel="stylesheet" href="src/css/shake.min.css">
     <link rel="stylesheet" href="src/css/animate.css">
     <link rel="stylesheet" href="src/css/jquery.fullPage.min.css">
@@ -17,13 +17,13 @@
         	<div id="treasure">
         		<div id="gold"></div>
         		<div id="value"></div>
-        		<img id="box" src="http://gtms03.alicdn.com/tps/i3/TB1K3KbHXXXXXciXpXX36op1FXX-323-224.png" height="224" width="323" />
+        		<img id="box" src="build/images/box_03.png" height="224" width="323" />
                 <button class="tbutton" id="openBoxButton">
                     <span>打开宝箱</span>
                 </button>
         	</div>
 
-        	<img id="chui" src="http://gtms01.alicdn.com/tps/i1/TB1nPp9HXXXXXbqXFXXKdQq.VXX-128-0.ico" height="128" width="128" />
+        	<img id="chui" src="build/images/chui_03.ico" height="128" width="128" />
 
             <!-- 弹窗 -->
         	<div class="bg"></div>
@@ -63,7 +63,7 @@
     			<div class="chead" id="howPlay">玩法</div>
     			<div class="ccontent ccontent_rules">
     				<h4>活动时间：</h4>
-    				2015年6月14日08:00-6月15日24:00
+    				2015年6月14日13:00-6月15日20:00
     				<h4>活动规则：</h4>
     				<ol>
                         <li>如获得红包，系统会在此活动页面中提示并展示红包金额，获得的红包将在活动结束之后，统一发送至您账户中。红包不得提现，不得转赠他人。</li>
@@ -83,30 +83,27 @@
     			<div class="chead" id="recommendTem">优秀毕设推荐<a href="#"><span class="right">点击更多&gt;</span></a></div>
     			<div class="ccontent ccontent_template">
     				<ul class="templateUl">
-    					<li><a href="#"><img data-src="http://gtms01.alicdn.com/tps/i1/TB1ABJYHFXXXXc0XFXXcVVVWVXX-629-960.jpg"  /><button class="useTemplateBtn">点击查看</button></a></li>
-                        <li><a href="#"><img data-src="http://gtms04.alicdn.com/tps/i4/TB1SHlYHFXXXXXDXVXXm1X6FVXX-748-1143.jpg"  /><button class="useTemplateBtn">点击查看</button></a></li>
-                        <li><a href="#"><img data-src="http://gtms03.alicdn.com/tps/i3/TB11OV7HFXXXXXMXXXXY0gtVFXX-523-798.jpg"  /><button class="useTemplateBtn">点击查看</button></a></li>
-                        <li><a href="#"><img data-src="http://gtms01.alicdn.com/tps/i1/TB1ABJYHFXXXXc0XFXXcVVVWVXX-629-960.jpg"  /><button class="useTemplateBtn">点击查看</button></a></li>
-                        <li><a href="#"><img data-src="http://gtms03.alicdn.com/tps/i3/TB11OV7HFXXXXXMXXXXY0gtVFXX-523-798.jpg"  /><button class="useTemplateBtn">点击查看</button></a></li>
+    					<li><a href="#"><img data-src="build/images/lunwen1.jpg"  /><button class="useTemplateBtn">点击查看</button></a></li>
+                        <li><a href="#"><img data-src="build/images/lunwen2.jpg"  /><button class="useTemplateBtn">点击查看</button></a></li>
+                        <li><a href="#"><img data-src="build/images/lunwen3.jpg"  /><button class="useTemplateBtn">点击查看</button></a></li>
+                        <li><a href="#"><img data-src="build/images/lunwen1.jpg"  /><button class="useTemplateBtn">点击查看</button></a></li>
+                        <li><a href="#"><img data-src="build/images/lunwen2.jpg"  /><button class="useTemplateBtn">点击查看</button></a></li>
     				</ul>
     			</div>
             </div>
             <!-- 左右装饰  -->
-            <img id="bottom_left" src="http://gtms04.alicdn.com/tps/i4/TB1sfuaHXXXXXc4XpXXpg3s1VXX-109-148.png" height="148" width="109" />
-            <img id="bottom_right" src="http://gtms02.alicdn.com/tps/i2/TB1gyzOGVXXXXbwaXXX4xpTJXXX-82-64.png" height="64" width="82"/>
+            <img id="bottom_left" src="build/images/bottom_left_03.png" height="148" width="109" />
+            <img id="bottom_right" src="build/images/bottom_right_06.png" height="64" width="82"/>
 		</div>
 
 
     </div>
 
-    <script src="http://lib.sinaapp.com/js/jquery/2.0.3/jquery-2.0.3.min.js"></script>
-    <script src="http://g.tbcdn.cn/tb/tracker/1.0.16/index.js"></script>
+    <script src="src/js/jquery-2.0.3.min.js"></script>
+    <script src="src/js/index.js"></script>
     <script src="src/js/log.js"></script>
     <script>
         var URL_CONFIG = {
-            //winnerList: 'http://fuwu.daily.taobao.net/activity/lottery/get_winner.htm?act_id=201501',
-            //getLottery: 'http://fuwu.daily.taobao.net/activity/lottery/get_lottery.htm?act_id=201501',
-            //getStatus: 'http://fuwu.daily.taobao.net/activity/lottery/get_state.htm?act_id=201501',
             winnerList: 'http://localhost:8888/get_winner',
             getLottery: 'http://localhost:8888/get_lottery',
             getStatus: 'http://localhost:8888/get_state',
